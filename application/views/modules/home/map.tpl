@@ -71,7 +71,7 @@
 {/block}
 
 {block name='custom_scripts'}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZjAIGvHA8JLWYY8_-3ZmaUZT3Ke3eHzk"></script>
+<script src="https://maps.googleapis.com/maps/api/js?keyaddApiKeyHere"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-base64@2.5.2/base64.min.js"></script>
 <script>
 	let map;
