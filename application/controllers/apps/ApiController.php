@@ -42,8 +42,8 @@ class ApiController extends MY_Controller
 					"Password" => "alulod123",
 					"Recipients" => $mobiles,
 					"Message" => $message,
-					# "ApiCode" => "PR-PRINC110878_N5IIL"
-					"ApiCode" => "DE-PRINC619349_TDR76"
+					# "ApiCode" => "Api here"
+					"ApiCode" => "Api here"
 				];
 
 				curl_setopt_array($curl, array(
@@ -95,7 +95,7 @@ class ApiController extends MY_Controller
 		$lng_to 	= post('lng_to');
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://myhost14.com/gmap/road-api.php?lat1={$lat_from}&lng1={$lng_from}&lat2={$lat_to}&lng2={$lng_to}&key=AIzaSyCbmFMEwqVe0cxFEeE2Ff4eAUqiW39Lm4E",
+			CURLOPT_URL => "https://myhost14.com/gmap/road-api.php?lat1={$lat_from}&lng1={$lng_from}&lat2={$lat_to}&lng2={$lng_to}&key=apiKey here",
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => '',
 			CURLOPT_MAXREDIRS => 10,
