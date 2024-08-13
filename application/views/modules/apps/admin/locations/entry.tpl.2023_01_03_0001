@@ -1,0 +1,231 @@
+{extends 'templates/default/form/entry/entry.tpl'}
+
+{$id 						= $prev_data.id|default:false}
+
+{$ctrl_route				= $ctrl_route|default:''|route_by_url}
+
+{$form_entry_route 			= $ctrl_route|concat:('.update'|iif:$id:'.store')|iif:$ctrl_route}}
+{$form_entry_action 		= $form_entry_route|route}
+{$can_entry					= $form_entry_route|is_user_route}
+
+{$form_delete_route 		= $ctrl_route|concat:'.delete'}
+{$form_delete_action 		= $form_delete_route|route}
+{$can_delete				= $form_delete_route|is_user_route}
+
+{$can_activate 				= 'activate-location'|is_user_permission}
+
+{$card_title 				= ('Update'|iif:$can_entry:'View')|iif:$id:'New'|concat:' Location'}
+
+{$button_text 				= 'Update'|iif:$id:'Save'}
+{$button_swal_positive_text = 'swal-positive-text="Yes, '|concat:('update'|iif:$id:'save')|concat:' it!"'}
+{$button_swal_title 		= 'swal-title="Update Location?"'|iif:$id}
+{$button_swal_text 			= ''|iif:$id:'swal-text="Save Location?"'}
+
+{$delete_button_swal_title 	= 'swal-title="Delete Location?"'}
+
+{block name='form_fields'}
+{form_input enabled=true field='location' value=$prev_data.location|default:''}
+
+{form_select enabled=true field='location_category_id|Category' options=$location_categories|default:[] value=$prev_data.location_category_id|default:false}
+
+{form_textarea enabled=true field='description' value=$prev_data.description|default:'' required=false}
+
+{* <input type="hidden" name="road" value="{$prev_data.road|default:''|htmlentities}"> *}
+
+<input type="text" name="latitude" value="{$prev_data.latitude|default:''}">
+
+<input type="text" name="longitude" value="{$prev_data.longitude|default:''}">
+
+{$smarty.capture.form_activate_item}
+{/block}
+
+{block name='after_form_fields'}
+<div class="row">
+	<div class="col">
+		<div class="card vh-100">
+			<div id="map">
+			</div>
+		</div>
+		<button type="button" class="btn btn-danger" id="btn-clear-path">Clear Path</button>
+	</div>
+</div>
+{/block}
+
+{assign var='__assets' value=['ajax_form_submit', 'select2']}
+
+{block name='custom_styles'}
+<style>
+	#map {
+		width: 100%;
+		height: 100%;
+	}
+	.marker-position {
+		top: 0;
+		left: -20px;
+		position: absolute;
+		font-weight: bold;
+	}
+</style>
+{/block}
+
+{block name='custom_scripts'}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZjAIGvHA8JLWYY8_-3ZmaUZT3Ke3eHzk"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-base64@2.5.2/base64.min.js"></script>
+<script>
+	let map;
+	var markers = [];
+	var road_poly;
+	var road_points = [];
+
+	function initRoadLine()
+	{
+		var brgy_hall = { lat: 14.203390247146022, lng: 120.89041113853455 };
+
+		road_poly.setMap(null);
+		road_points = [];
+		road_points.push(brgy_hall);
+	}
+
+	function initMap() 
+	{
+		road_poly = new google.maps.Polyline();
+
+		initRoadLine();
+
+		var center = { lat: 14.2198517, lng: 120.8830116 };
+
+		var strictBounds = new google.maps.LatLngBounds(
+			new google.maps.LatLng(14.1883994, 120.8567106),
+			new google.maps.LatLng(14.2504678, 120.909239));
+
+		map = new google.maps.Map(document.getElementById("map"), {
+			center: center,
+			zoom: 15,
+			restriction: {
+				latLngBounds: strictBounds,
+				strictBounds: false,
+			}
+		});
+
+		var innerCoords = [
+		new google.maps.LatLng(14.2367018, 120.8660918),
+		new google.maps.LatLng(14.237659, 120.8827),
+		new google.maps.LatLng(14.236993, 120.882828),
+		new google.maps.LatLng(14.236161, 120.882785),
+		new google.maps.LatLng(14.235371, 120.883687),
+		new google.maps.LatLng(14.234913, 120.884717),
+		new google.maps.LatLng(14.233457, 120.885575),
+		new google.maps.LatLng(14.232417, 120.885575),
+		new google.maps.LatLng(14.231793, 120.886605),
+		new google.maps.LatLng(14.230421, 120.88742),
+		new google.maps.LatLng(14.228757, 120.889352),
+		new google.maps.LatLng(14.227842, 120.88918),
+		new google.maps.LatLng(14.227218, 120.889866),
+		new google.maps.LatLng(14.226635, 120.890982),
+		new google.maps.LatLng(14.226968, 120.893042),
+		new google.maps.LatLng(14.225845, 120.893042),
+		new google.maps.LatLng(14.225013, 120.893343),
+		new google.maps.LatLng(14.223432, 120.893729),
+		new google.maps.LatLng(14.222517, 120.894201),
+		new google.maps.LatLng(14.222101, 120.89493),
+		new google.maps.LatLng(14.220021, 120.894759),
+		new google.maps.LatLng(14.219147, 120.895402),
+		new google.maps.LatLng(14.217941, 120.89669),
+		new google.maps.LatLng(14.21557, 120.896733),
+		new google.maps.LatLng(14.214197, 120.897377),
+		new google.maps.LatLng(14.2117, 120.89699),
+		new google.maps.LatLng(14.2111496, 120.8972801),
+		new google.maps.LatLng(14.210328, 120.89772),
+		new google.maps.LatLng(14.208913, 120.897977),
+		new google.maps.LatLng(14.206875, 120.896733),
+		new google.maps.LatLng(14.205876, 120.897205),
+		new google.maps.LatLng(14.203546, 120.896948),
+		new google.maps.LatLng(14.202839, 120.890038),
+		new google.maps.LatLng(14.203089, 120.882485),
+		new google.maps.LatLng(14.2057726, 120.8813903),
+		new google.maps.LatLng(14.2094116, 120.8799485),
+		new google.maps.LatLng(14.213781, 120.878236),
+		new google.maps.LatLng(14.2164501, 120.8780046),
+		new google.maps.LatLng(14.219106, 120.877807),
+		new google.maps.LatLng(14.2217476, 120.8771248),
+		new google.maps.LatLng(14.224056, 120.876477),
+		new google.maps.LatLng(14.229381, 120.873945),
+		new google.maps.LatLng(14.231627, 120.871155),
+		new google.maps.LatLng(14.231045, 120.866821),
+		new google.maps.LatLng(14.23508, 120.866263),
+		new google.maps.LatLng(14.2367529, 120.8660905),
+		new google.maps.LatLng(14.3084876, 120.7687492),
+		new google.maps.LatLng(14.1244446, 120.7745856),
+		new google.maps.LatLng(14.1201163, 120.9953422),
+		new google.maps.LatLng(14.3158063, 120.9826392),
+		new google.maps.LatLng(14.3084876, 120.7687492),
+		new google.maps.LatLng(14.2367018, 120.8660918),
+		];
+
+		var points = [innerCoords];
+
+		var polygon = new google.maps.Polygon({
+			map: map,
+			paths: points,
+			strokeColor: '#FF0000',
+			strokeOpacity: 0.8,
+			strokeWeight: 0,
+			fillColor: '#BDBDBD',
+			fillOpacity: 1
+		});
+
+		google.maps.event.addListener(map, 'click', function(event)
+		{
+			var road_point = { lat: event.latLng.lat(), lng: event.latLng.lng() };
+
+			road_points.push(road_point);
+
+			road_poly.setMap(null);
+
+			road_poly = new google.maps.Polyline({
+				path: road_points,
+				geodesic: true,
+				strokeColor: "#FF0000",
+				strokeOpacity: 1.0,
+				strokeWeight: 2,
+			});
+
+			road_poly.setMap(map);
+
+			$('[name="road"]').val(JSON.stringify(road_points));
+		});
+
+		{if $prev_data.road|default:false}
+
+		road_points = {$prev_data.road};
+
+		road_poly = new google.maps.Polyline({
+			path: road_points,
+			geodesic: true,
+			strokeColor: "#FF0000",
+			strokeOpacity: 1.0,
+			strokeWeight: 2,
+		});
+
+		road_poly.setMap(map);
+
+		{/if}
+	}
+
+	$(() => 
+	{
+		initMap();
+
+		$('.form-submit').formSubmit();
+
+		$('select').select2();
+
+		$('#btn-clear-path').click(function ()
+		{
+			initRoadLine();
+
+			$('[name="road"]').val('');
+		});
+	});
+</script>
+{/block}

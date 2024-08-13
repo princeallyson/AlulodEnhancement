@@ -1,0 +1,103 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-11-23 13:10:38 --> Severity: Notice --> Undefined property: LuthierController::$sidebar_visible C:\wamp64\www\apps\tracer\application\middleware\SidebarMiddleware.php 18
+ERROR - 2021-11-23 13:28:26 --> Severity: Notice --> Undefined offset: 1 C:\wamp64\www\apps\tracer\application\routes\web.php 254
+ERROR - 2021-11-23 13:29:26 --> Severity: Notice --> Undefined property: LuthierController::$sidebar_visible C:\wamp64\www\apps\tracer\application\middleware\SidebarMiddleware.php 18
+ERROR - 2021-11-23 13:30:05 --> Severity: Notice --> Undefined offset: 1 C:\wamp64\www\apps\tracer\application\routes\web.php 254
+ERROR - 2021-11-23 13:48:48 --> Severity: error --> Exception: syntax error, unexpected ''company_name'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' C:\wamp64\www\apps\tracer\application\controllers\apps\WorkExperienceController.php 24
+ERROR - 2021-11-23 14:24:42 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\300f71487913f34419d1dd2482eeb51a9ba7f4a4_0.file.head.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:27:15 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\5d3762c58c1908a402be403b6cfcaff90d532380_0.file.master.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:27:39 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\300f71487913f34419d1dd2482eeb51a9ba7f4a4_0.file.head.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:27:46 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\8083c32275a2f7d4d0d567a57f11c2dfe0c9a6bd_0.file.general.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:28:30 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\bf0d8e55064888c2f613631689fb6421291b4242_0.file.scripts.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:28:58 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\300f71487913f34419d1dd2482eeb51a9ba7f4a4_0.file.head.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:29:10 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\5d3762c58c1908a402be403b6cfcaff90d532380_0.file.master.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:30:59 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\8083c32275a2f7d4d0d567a57f11c2dfe0c9a6bd_0.file.general.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:31:07 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\8083c32275a2f7d4d0d567a57f11c2dfe0c9a6bd_0.file.general.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:43:34 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\300f71487913f34419d1dd2482eeb51a9ba7f4a4_0.file.head.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 14:59:49 --> Severity: Notice --> Undefined offset: 1 C:\wamp64\www\apps\tracer\application\routes\web.php 254
+ERROR - 2021-11-23 15:42:20 --> Severity: error --> Exception: Call to undefined method Fpdfci::display() C:\wamp64\www\apps\tracer\application\controllers\apps\PdfController.php 22
+ERROR - 2021-11-23 15:58:31 --> Severity: Notice --> Undefined variable: tableB C:\wamp64\www\apps\tracer\application\controllers\apps\PdfController.php 31
+ERROR - 2021-11-23 15:58:31 --> Severity: error --> Exception: Call to a member function endTable() on null C:\wamp64\www\apps\tracer\application\controllers\apps\PdfController.php 31
+ERROR - 2021-11-23 16:18:27 --> Severity: error --> Exception: syntax error, unexpected 'x1' (T_STRING), expecting ')' C:\wamp64\www\apps\tracer\application\controllers\apps\PdfController.php 65
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$col_num C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 73
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 303
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$col_counter C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$col_num C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$rows C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 852
+ERROR - 2021-11-23 16:59:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 852
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$row_data C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 853
+ERROR - 2021-11-23 16:59:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 853
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$total_rowspan C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 863
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$blocks C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 868
+ERROR - 2021-11-23 16:59:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 868
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 16:59:48 --> Severity: Notice --> Undefined property: easyTable::$pdf_obj C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 16:59:48 --> Severity: error --> Exception: Call to a member function PageBreak() on null C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 16:59:48 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\wamp64\www\apps\tracer\system\core\Exceptions.php:271) C:\wamp64\www\apps\tracer\system\core\Common.php 570
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$col_num C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 73
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 303
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 101
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$col_counter C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$col_num C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$col_counter C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$col_num C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 771
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$rows C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 852
+ERROR - 2021-11-23 17:00:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 852
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$row_data C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 853
+ERROR - 2021-11-23 17:00:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 853
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$total_rowspan C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 863
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$blocks C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 868
+ERROR - 2021-11-23 17:00:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 868
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$table_style C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 17:00:08 --> Severity: Notice --> Undefined property: easyTable::$pdf_obj C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 17:00:08 --> Severity: error --> Exception: Call to a member function PageBreak() on null C:\wamp64\www\apps\tracer\application\third_party\fpdf\easy_table\easyTable.php 914
+ERROR - 2021-11-23 17:00:08 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\wamp64\www\apps\tracer\system\core\Exceptions.php:271) C:\wamp64\www\apps\tracer\system\core\Common.php 570
+ERROR - 2021-11-23 17:53:14 --> Severity: Notice --> Undefined property: LuthierController::$sidebar_visible C:\wamp64\www\apps\tracer\application\middleware\SidebarMiddleware.php 18
+ERROR - 2021-11-23 18:34:35 --> Severity: error --> Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tracer.masterlist' doesn't exist (SQL: select * from `masterlist` where `student_id` = rer and lower(first_name) = er and lower(last_name) = er limit 1) C:\wamp64\www\apps\tracer\application\vendor\illuminate\database\Connection.php 669
+ERROR - 2021-11-23 21:58:40 --> Severity: Notice --> Undefined property: LuthierController::$sidebar_visible C:\wamp64\www\apps\tracer\application\middleware\SidebarMiddleware.php 18
+ERROR - 2021-11-23 22:30:53 --> Severity: Notice --> Undefined property: AnalyticsController::$sm C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 32
+ERROR - 2021-11-23 22:30:53 --> Severity: error --> Exception: Call to a member function assign() on null C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 32
+ERROR - 2021-11-23 22:52:02 --> Severity: error --> Exception: syntax error, unexpected ';', expecting ']' C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 41
+ERROR - 2021-11-23 22:56:35 --> Severity: error --> Exception: syntax error, unexpected ')' C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 44
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Illegal offset type C:\wamp64\www\apps\tracer\application\controllers\apps\admin\AnalyticsController.php 45
+ERROR - 2021-11-23 23:00:25 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\wamp64\www\apps\tracer\system\core\Exceptions.php:271) C:\wamp64\www\apps\tracer\application\helpers\_debug_helper.php 14
+ERROR - 2021-11-23 23:04:43 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\5d3762c58c1908a402be403b6cfcaff90d532380_0.file.master.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 23:06:07 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\300f71487913f34419d1dd2482eeb51a9ba7f4a4_0.file.head.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90
+ERROR - 2021-11-23 23:07:18 --> Severity: error --> Exception: Syntax error in template "file:C:\wamp64\www\apps\tracer\application\views\modules\apps\admin\analytics\analytics.tpl"  on line 5 "{assign var=last_tag=$answer.tag}" missing 'value' attribute C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php 5
+ERROR - 2021-11-23 23:07:40 --> Severity: error --> Exception: unable to write file C:\wamp64\www\apps\tracer\application\views\smarty\templates_c\8083c32275a2f7d4d0d567a57f11c2dfe0c9a6bd_0.file.general.tpl.php C:\wamp64\www\apps\tracer\application\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php 90

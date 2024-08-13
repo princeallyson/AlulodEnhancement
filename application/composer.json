@@ -1,0 +1,20 @@
+{
+    "require": {
+        "smarty/smarty": "^3.1",
+        "illuminate/database": "^6.18.38",
+        "kint-php/kint": "^3.3",
+        "gajus/dindent": "^2.0",
+        "phpmailer/phpmailer": "^6.5",
+        "spatie/html-element": "^1.1",
+        "luthier/luthier": "^1.0",
+        "illuminate/pagination": "^6.20.34",
+        "setasign/fpdf": "^1.8"
+    },
+    "autoload": {
+    	"classmap": [
+	       "models/eloquent",
+           "libraries/static",
+           "third_party/no-package"
+	    ]
+    }
+}

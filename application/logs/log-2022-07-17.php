@@ -1,0 +1,16 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-07-17 20:54:45 --> Severity: error --> Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'short_text' in 'field list' (SQL: select `id`, `title`, `short_text`, `created_at`, `active` from `tbl_ponds` where `owner_id` = 1 order by `id` desc) C:\wamp64\www\apps\fish-pond\application\vendor\illuminate\database\Connection.php 669
+ERROR - 2022-07-17 21:18:47 --> Severity: Notice --> Undefined variable: pets C:\wamp64\www\apps\fish-pond\application\controllers\HomeController.php 45
+ERROR - 2022-07-17 21:18:47 --> Severity: error --> Exception: Call to a member function where() on null C:\wamp64\www\apps\fish-pond\application\controllers\HomeController.php 45
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Undefined index: pet C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 96
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Trying to get property 'value' of non-object C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 96
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Undefined index: pet C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 102
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Trying to get property 'value' of non-object C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 102
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Undefined index: pet C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 107
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Trying to get property 'value' of non-object C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 107
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Undefined index: pet C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 109
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Trying to get property 'value' of non-object C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 109
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Undefined index: pet C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 114
+ERROR - 2022-07-17 21:21:08 --> Severity: Notice --> Trying to get property 'value' of non-object C:\wamp64\www\apps\fish-pond\application\third_party\smarty\templates_c\4c52fbac4dafcdce466628c0b9686eb44b7f76b9_0.file.pond.tpl.php 114
+ERROR - 2022-07-17 21:23:36 --> Severity: error --> Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'registered' in 'where clause' (SQL: select `id`, `username`, `created_at`, `active` from `app_users` where `visible` = 1 and `registered` = 0 order by `id` asc) C:\wamp64\www\apps\fish-pond\application\vendor\illuminate\database\Connection.php 669
